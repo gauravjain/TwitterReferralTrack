@@ -1,0 +1,7 @@
+<h1>Tweet#index</h1>
+<p>Find me in app/views/tweet/index.html.erb</p>
+    <% @tweets.each do |tweet| %>
+    <li>
+    <%= tweet.urls[0].expanded_url %>
+    </li>
+    <% end %>
