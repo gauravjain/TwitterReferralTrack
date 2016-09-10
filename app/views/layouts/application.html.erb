@@ -6,12 +6,17 @@
 </head>
 
   <body>
-  <ol>
+  <table border = 1>
+  	<tr>
+  		<td>Referral Code</td>
+  		<td>Tweet Favorite Count</td>
+  		<td>Retweet Count</td>
+  	</tr>
     <% @tweets.each do |tweet| %>
-    <li>
-    <%= tweet.urls[0].expanded_url %>
-    </li>
+    <tr>
+    <td>
+    <%= tweet.urls[0].expanded_url %></td><td> <%= tweet.favorite_count %> </td> <td><%= tweet.retweet_count %></td>
+    </tr>
     <% end %>
-    </ol>
   </body>
 </html>
