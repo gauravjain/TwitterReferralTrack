@@ -15,7 +15,7 @@
     <% @tweets.each do |tweet| %>
     <tr>
     <td>
-    <%= tweet.urls[0].expanded_url %></td><td> <%= tweet.favorite_count %> </td> <td><%= tweet.retweet_count %></td>
+    <%= tweet.urls[0].expanded_url.path.split('/').last %></td><td> <%= tweet.favorite_count %> </td> <td><%= tweet.retweet_count %></td>
     </tr>
     <% end %>
   </body>
