@@ -4,19 +4,21 @@
     <title>TwitterReferralTrack</title>
     <%= csrf_meta_tags %>
 </head>
-
   <body>
   <table border = 1>
   	<tr>
+  		<td>Tweet</td>
   		<td>Referral Code</td>
   		<td>Tweet Favorite Count</td>
   		<td>Retweet Count</td>
   	</tr>
     <% @tweets.each do |tweet| %>
-    <tr>
-    <td>
-    <%= tweet.urls[0].expanded_url.path.split('/').last %></td><td> <%= tweet.favorite_count %> </td> <td><%= tweet.retweet_count %></td>
-    </tr>
+		<tr>
+			<td width="600"><%= tweet.full_text %></td>
+		    <td><%= tweet.urls[0].expanded_url.path.split('/').last %></td>
+		    <td><%= tweet.favorite_count %></td> 
+		    <td><%= tweet.retweet_count %></td>
+		</tr>
     <% end %>
   </body>
 </html>
