@@ -14,7 +14,7 @@ class TweetController < ApplicationController
    		t.tweet_favorite_count = tweet.favorite_count
    		t.tweet_retweet_count = tweet.retweet_count	
    		t.referral_code = tweet.urls[0].expanded_url.path.split('/').last 
-   		t.save
+   		t.save #saves the tweet data to the tweets database
    	end
   end
 end
