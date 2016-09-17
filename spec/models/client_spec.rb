@@ -18,6 +18,4 @@ RSpec.describe Client, :type => :model do
 		assc = Client.reflect_on_association(:tweets)
 		expect(assc.macro) ==  :has_many
 	end
-
-	#it { should have_many(:tweets) }
 end
