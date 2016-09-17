@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  client_id: MyString
+  tweet_id: MyString
+  tweet_text: MyText
+  tweet_time: 2016-09-16 20:02:42
+  tweet_favorite_count: 1
+  tweet_retweet_count: 1
+  referral_code: MyString
+
+two:
+  id: 
+  client_id: MyString
+  tweet_id: MyString
+  tweet_text: MyText
+  tweet_time: 2016-09-16 20:02:42
+  tweet_favorite_count: 1
+  tweet_retweet_count: 1
+  referral_code: MyString
